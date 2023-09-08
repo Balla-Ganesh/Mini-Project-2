@@ -1,0 +1,11 @@
+extends layout
+include mixins/company_info
+
+block content
+  h2(style="color: black; text-align: center; margin: 20px") Company Information
+  hr(style="border-top: 2px solid red")
+  - var count = 0
+  for info in allInfo
+    - count = count + 1
+    +company_info(info, count)
+    hr(style="border-top: 2px solid red")

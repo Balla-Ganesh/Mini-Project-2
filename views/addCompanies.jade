@@ -1,0 +1,23 @@
+extends layout
+block content
+  h3(style="margin-top:40px; color:black; text-align:center;")=title
+  form.form-container(action="/addCompanies", method="POST", enctype="multipart/form-data")
+    label(for="name") Company Name:
+    input#name.name.form-input(type="text", name="name", placeholder="Enter Name", required)
+
+    label(for="year") Establishment Year:
+    input#year.year.form-input(type="text", name="year", placeholder="Establishment Year", required)
+
+    label(for="products") Products:
+    input#products.products.form-input(type="text", name="products", placeholder="Products", required)
+
+    label(for="info") Company Info:
+    textarea#info.info.form-input(name="info", placeholder="Company Info", rows="5", required)
+
+    label(for="url") Website URL:
+    input#url.url.form-input(type="text", name="url", placeholder="Website URL")
+
+    label(for="image") Company Logo:
+    input#image.image.form-input(type="file", name="image", accept="image/*")
+
+    button.btn.btn-submit(type="submit") Submit

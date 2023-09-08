@@ -1,0 +1,22 @@
+mixin companies_details(company)
+  //- h1 Hello, this is the companies page
+  .allCompanies 
+    .d-flex.align-items-center
+      .flex-shrink-0
+        a(href=`/oneCompany/${company.name}`) 
+          img(src=company.image alt=company.name width="100px")
+      .flex-grow-1.ms-3
+        a(href=`/oneCompany/${company.name}`) 
+          h3= company.name
+        p 
+          b Established: 
+          | #{company.year}
+        p 
+          b Products: 
+          | #{company.products}
+        br
+        a(href=`/oneCompany/${company.name}`)
+          button.btn.btn-warning(style="color: red; text-shadow: 2px 2px 4px white;") Explore
+    hr
+  
+

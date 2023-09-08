@@ -1,0 +1,51 @@
+//- mixin company_details(Info)
+//-   .company-details-wrapper(style="margin-top:0px;margin-top:0px;")
+//-     .company-image(style="background-image: url(" + Info.image + ");")
+//-         p
+//-             b Company Name: 
+//-             | #{Info.name}
+//-         p 
+//-             b Year of Establishment:  
+//-             | #{Info.year}
+//-         p
+//-             b Products:  
+//-             | #{Info.products}
+//-         p 
+//-             b General Info:
+//-             | #{Info.info}
+//-         p 
+//-             a(href=Info.url) Visit Website
+//-     .buttons-container
+//-         .nav24
+//-           a(href="/getInfo")
+//-             button.btn.btn-warning(style="color: red; text-shadow: 2px 2px 4px white;") Get Info
+//-         .nav23
+//-           a(href="/post_info")
+//-             button.btn.btn-warning(style="color: red; text-shadow: 2px 2px 4px white;") Post Info
+mixin company_details(Info)
+  .company-details-wrapper
+    .company-image(style="background-image: url(" + Info.image + ");")
+      .text-overlay
+        p
+            b Company Name: 
+            | #{Info.name}
+        p
+            b Year of Establishment: 
+            | #{Info.year}
+        p
+            b Products: 
+            | #{Info.products}
+        p
+            b General Info: 
+            | #{Info.info}
+        p 
+            a(href=Info.url target="_blank")
+                button.btn.btn-warning(style="color: red; text-shadow: 2px 2px 4px white;") Visit Website
+            //- h2 Welcome to #{Info.name}
+        .buttons-container
+            .nav24
+                a(href=`/getInfo/${Info.name}`)
+                    button.btn.btn-warning(style="color: red; text-shadow: 2px 2px 4px white;") Get Info
+            .nav23
+                a(href=`/post_info/${Info.name}`)
+                    button.btn.btn-warning(style="color: red; text-shadow: 2px 2px 4px white;") Post Info

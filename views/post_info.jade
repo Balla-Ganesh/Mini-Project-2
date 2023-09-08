@@ -1,0 +1,60 @@
+extends layout 
+block content 
+    h2(style="color:black; text-align:center;")=title
+    form(action="/post_info", method="POST" id="info-form")
+        div.container
+            .div1-form
+                h2 User Details
+                .div11-form
+                    label(for="roll_no") Roll Number:
+                    input#roll_no(type="text", name="roll_no", placeholder="Enter Roll Number", required)
+
+                    label(for="name") Name:
+                    input#name(type="text", name="name", placeholder="Enter Name", required)
+
+                    label(for="year") Year:
+                    input#year(type="text", name="year", placeholder="Enter Year", required)
+                .div12-form
+                    label(for="department") Department:
+                    input#department(type="text", name="department", placeholder="Enter Department", required)
+
+                    label(for="email") Email:
+                    input#email(type="text", name="email", placeholder="Enter Email", required)
+
+                    label(for="phone_no") Phone Number:
+                    input#phone_no(type="text", name="phone_no", placeholder="Enter Phone Number", required)
+            .div2-form
+                h2 Company Details
+
+                label(for="company_name") Company Name:
+                if company==undefined 
+                    input#company_name(type="text", name="company_name", placeholder="Enter Company Name",  required)
+                else    
+                    input#company_name(type="text", name="company_name", placeholder="Enter Company Name", value=company required)
+
+                label(for="company_role") Company Role:
+                input#company_role(type="text", name="company_role", placeholder="Enter Company Role", required)
+
+                label(for="company_requirments") Company Requirements:
+                textarea#company_requirments(name="company_requirments", placeholder="Enter Company Requirements", rows="5", required)
+
+            .div3-form
+                h2 Interview Details 
+                label(for="exam_pattern") Exam Pattern:
+                textarea#exam_pattern(name="exam_pattern", placeholder="Enter Exam Pattern", rows="5", required)
+
+                label(for="tech1") Tech Round 1:
+                textarea#tech1(type="text", name="tech1", placeholder="Enter Tech Round 1",rows="5" , required)
+
+                label(for="tech2") Tech Round 2:
+                span.required-message(style="color: red") Enter none if round doesnt exists
+                textarea#tech2(type="text", name="tech2", placeholder="Enter Tech Round 2",rows="5", required)
+
+                label(for="hr") HR Round:
+                span.required-message(style="color: red") Enter none if round doesnt exists
+                textarea#hr(type="text", name="hr", placeholder="Enter HR Round",rows="5", required)
+
+                label(for="inputs") Other Inputs:
+                textarea#inputs(type="text", name="inputs", placeholder="Enter Other Inputs", rows="5")
+
+                button.btn.btn-submit(type="submit") Submit

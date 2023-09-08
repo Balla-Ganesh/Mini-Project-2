@@ -1,0 +1,8 @@
+extends layout
+include mixins/companies_details
+block content 
+  .allComp
+    h2= title
+    .companies 
+      for company in allCompanies
+        +companies_details(company)

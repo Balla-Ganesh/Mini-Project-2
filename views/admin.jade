@@ -1,0 +1,12 @@
+extends layout 
+
+block content 
+    h3(style=" margin-top:40px; color:black; text-align:center;")=title 
+    form.form-container(action="/admin", method="POST")
+        label(for="username") Username:
+        input#name.name.form-input(type="text", name="username", placeholder="Enter username", required)
+
+        label(for="password") Password:
+        input#year.year.form-input(type="text", name="password", placeholder="Enter password", required)
+
+        button.btn.btn-submit(type="submit") Submit

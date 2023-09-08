@@ -1,0 +1,56 @@
+mixin company_info(info,count)
+    h2(style="color: black; text-align: center; background-color: #f0f0f0; padding: 10px;") User #{count}
+    hr(style="border-top: 2px solid red")
+    div.container
+        .idiv1-form
+            h2 User Info
+            .idiv11-form 
+                label(for="roll_no") Roll Number:
+                input#roll_no(type="text", name="roll_no", placeholder=`${info.roll_no}`, readonly)
+
+                label(for="name") Name:
+                input#name(type="text", name="name", placeholder=`${info.name}`, readonly)
+
+                label(for="year") Year:
+                input#year(type="text", name="year", placeholder=`${info.year}`, readonly)
+
+            .idiv12-form
+                label(for="department") Department:
+                input#department(type="text", name="department", placeholder=`${info.department}`, readonly)
+
+                label(for="email") Email:
+                input#email(type="text", name="email", placeholder=`${info.email}`, readonly)
+
+                label(for="phone_no") Phone Number:
+                input#phone_no(type="text", name="phone_no", placeholder=`${info.phone_no}`, readonly)
+
+        .idiv2-form
+            //- h2 Company Info
+            .idiv21-form
+                h2 Company Info
+                label(for="company_name") Company Name:
+                input#company_name(type="text", name="company_name", placeholder=`${info.company_name}`, readonly)
+
+                label(for="company_role") Company Role:
+                input#company_role(type="text", name="company_role", placeholder=`${info.company_role}`, readonly)
+
+                label(for="company_requirments") Company Requirements:
+                textarea#company_requirments(name="company_requirments", placeholder=`${info.company_requirments}`, rows="5", readonly)
+
+                label(for="exam_pattern") Exam Pattern:
+                textarea#exam_pattern(name="exam_pattern", placeholder=`${info.exam_pattern}`, rows="5", readonly)
+
+            //- h2 Interview Process
+            .idiv22-form
+                h2 Intervew Process
+                label(for="tech1") Tech Round 1:
+                textarea#tech1(type="text", name="tech1", placeholder=`${info.tech1}`,rows="5" , readonly)
+
+                label(for="tech2") Tech Round 2:
+                textarea#tech2(type="text", name="tech2", placeholder=`${info.tech2}`,rows="5", readonly)
+
+                label(for="hr") HR Round:
+                textarea#hr(type="text", name="hr", placeholder=`${info.hr}`,rows="5", readonly)
+
+                label(for="inputs") Other Inputs:
+                textarea#inputs(type="text", name="inputs", placeholder=`${info.inputs}`, rows="5" readonly)

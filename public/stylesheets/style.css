@@ -1,0 +1,1171 @@
+/* Home  */
+body {
+  /* padding: 50px; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.back_ground {
+  margin: 0%;
+  padding: 0%;
+  background-image: url("/images/placementbackground.jpg");
+  background-image: url("/images/company.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 15%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+img.logo {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+/* a img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+} */
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding-top: 0%;
+}
+
+.nav1 {
+  margin-right: auto;
+  padding-left: 20px;
+}
+
+.nav2 {
+  margin-left: auto;
+  order: 2;
+  display: flex;
+  align-items: center;
+}
+
+.nav21,.nav25,.nav26,.nav27,
+.nav22,
+.nav23,
+.nav24 {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+  padding-top: 0%;
+  padding-left: 10%;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Arial", sans-serif;
+  color: red;
+  text-shadow: 2px 2px 4px rgb(1, 1, 1);
+  /* margin-top: 30px; */
+  padding-left: 18%;
+  padding-bottom: 19.8%;
+  margin-bottom: 0;
+}
+
+div.d-grid.gap-2.col-6.mx-auto button.btn.btn-primary {
+  margin-top: 5%;
+}
+
+.list {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list .list1 {
+  flex: 2;
+}
+
+.list .list2 {
+  flex: 1;
+}
+
+.list .list2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding-left: 25px;
+}
+
+.list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.list ul li {
+  margin-bottom: 10px;
+}
+
+.carousel-item img {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: auto;
+  height: 50%;
+  object-fit: cover;
+}
+
+/* CSS code */
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Full images with numbers and message Info */
+.Containers {
+  display: none;
+}
+
+/* Back & forward buttons */
+.Back,
+.forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Position the "forward" button to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/* Add a black background with opacity when hovering over buttons */
+.Back:hover,
+.forward:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption Info */
+.Info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Slide numbering (1/3 etc.) */
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+/* Circles or dots */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: #acc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.enable,
+.dots:hover {
+  background-color: #717161;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.quote {
+  padding-right: 10%;
+}
+
+.quote p {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 5%;
+  font-family: serif;
+  color: rgb(10, 126, 126);
+}
+
+.quote h1 {
+  font-size: large;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 1%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 30px;
+  color: rgb(65, 64, 64);
+}
+
+.quote h5 {
+  font-size: small;
+  text-align: center;
+  padding-left: 85%;
+  color: #fd0808;
+}
+
+.custom-input1 {
+  width: 300px;
+}
+
+.custom-input2 {
+  width: 300px;
+  height: 150px;
+  resize: vertical;
+}
+
+.form-label {
+  color: #fd0808;
+  font-size: larger;
+}
+
+footer {
+  padding-bottom: 5px;
+}
+
+.div_footer1 {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 15px;
+  border: 2px solid black;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.div_footer1 h4 {
+  padding-bottom: 15px;
+}
+
+.div1 {
+  flex-grow: 1;
+  text-align: justify;
+}
+
+.div2 {
+  flex-grow: 1;
+}
+.btn{
+  margin-bottom: 30px;
+}
+
+.div_footer2 {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.div_footer2 p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+ul.social-media-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.social-media-list li {
+  margin-right: 10px;
+}
+
+ul.social-media-list li a {
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+ul.social-media-list li a:hover {
+  color: #555;
+}
+
+
+.carousel-container {
+  max-width: 600px; /* Adjust the max-width according to your preference */
+  margin: 0 auto;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 300px; /* Adjust the max-height according to your preference */
+}
+
+.carousel-indicators li {
+  background-color: #999;
+}
+
+.carousel-indicators .active {
+  background-color: #333;
+}
+
+.carousel-control-prev1,
+.carousel-control-next1,
+.carousel-control-prev2,
+.carousel-control-next2 {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #fff;
+}
+
+.carousel-control-prev1,
+.carousel-control-prev2 {
+  left: 0;
+}
+
+.carousel-control-next1,
+.carousel-control-next2 {
+  right: 0;
+}
+
+.carousel-control-prev1:hover,
+.carousel-control-next1:hover,
+.carousel-control-prev2:hover,
+.carousel-control-next2:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control-prev1:focus,
+.carousel-control-next1:focus,
+.carousel-control-prev2:focus,
+.carousel-control-next2:focus {
+  outline: none;
+}
+
+
+/* allCompanies  */
+
+.allComp h2{
+text-align: center;
+color: red;
+margin: 10px;
+padding: 10px;
+text-decoration:underline black 2px;
+}
+
+.d-flex {
+  width: calc(100%); /* Adjust the width based on your design */
+  margin-bottom: 20px; /* Add margin between entries */
+  padding: 30px;
+}
+
+
+.d-flex a{
+  text-decoration: none; 
+  color: rgb(242, 112, 32);
+}
+
+.explore a{
+  color: rgb(50, 47, 47);
+}
+
+/* Adjust the width and margin to achieve three items per row */
+.companies {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.companies .col-md-4 {
+  width: calc(40%); /* Adjust the width based on your design */
+  margin-bottom: 20px; /* Add margin between items */
+}
+
+/* Clear the margin for the last item in each row */
+.companies .col-md-4:nth-child(3n) {
+  margin-right: 0;
+}
+
+
+
+
+/* Company Page  */
+
+
+/* Apply styles to the company details wrapper */
+.company-details-wrapper {
+  margin-top: 20px; /* Adjust the margin as needed */
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a shadow for the container */
+}
+
+/* Apply styles to the company image */
+.company-image {
+  width: 100%;
+  height: 600px; /* Increase the height of the image */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px; /* Round the corners */
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Style the text overlay */
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(206, 199, 199, 0.5); /* Background color with transparency */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: justify;
+  padding: 20px;
+  padding-top: 180px;
+  font-size: large;
+  color: #040404;
+}
+
+/* Style the paragraphs within the text overlay */
+.text-overlay p {
+  margin: 10px 0;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.text-overlay p b{
+  color:rgb(145, 4, 4);
+}
+
+.text-overlay a {
+  color: rgb(244, 218, 25);
+}
+
+/* Style the buttons container */
+.buttons-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content:right;
+  width: 100%;
+}
+
+
+
+
+
+
+/* 
+.navbar {
+  display: flex;
+  justify-content:center;
+}
+
+.search-form {
+  margin-left: auto;
+}
+
+
+.search-input {
+  width: 200px;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.search-btn {
+  position:absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  padding-left: 10px;
+}
+
+.search-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.search-btn:before {
+  content: '\f002';
+  font-family: FontAwesome;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.search-input:focus,
+.search-btn:focus {
+  outline: none;
+}
+
+/* Add any additional styling or animations as per your preference */
+
+/* .search{
+  margin: 10px;
+  margin-left: 70%;
+  margin-top: 5%;
+}
+
+
+.search input{
+  width: 300px;
+  height: 30px;
+}
+
+.search .sub-btn{
+  margin-left: 10px;
+  width: 100px;
+  height: 30px;
+  background-color: rgb(13, 223, 188);
+  color: red;
+} */
+
+
+/* add company info  */
+
+ .form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-container label {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.form-container input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.form-container input[type="file"]:focus {
+  outline: none;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #e67e22;
+  cursor: pointer;
+} 
+
+
+/* .form-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-container label {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* New CSS for image input field */
+/* .form-container input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.form-container input[type="file"]:focus {
+  outline: none;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #e67e22;
+}  */
+
+
+
+ /* Get Info  */
+
+ .idiv1-form,
+ .idiv2-form,
+ .idiv3-form {
+   width: 98%;
+   padding: 20px;
+   box-sizing: border-box;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   margin-bottom: 20px;
+   background-color: #f1f1f1;
+ }
+ 
+ .idiv1-form {
+   display: flex;
+   justify-content: space-between;
+   width: 98%;
+ }
+
+ .idiv2-form {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+}
+ 
+ .idiv1-form h2{
+   padding-top: 10%;
+   width: 250px;
+   color: red;
+ }
+ 
+ .idiv2-form h2{
+   text-align: center;
+   color: red;
+ } 
+ 
+ .idiv3-form h2{
+   text-align: center;
+   color: red;
+ }
+ 
+ .idiv11-form , .idiv12-form {
+   width: 48%;
+   padding: 20px;
+   box-sizing: border-box;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   margin-bottom: 20px;
+   background-color: #f1f1f1;
+ }
+
+ .idiv21-form , .idiv22-form {
+  width: 48%;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  background-color: #f1f1f1;
+}
+ 
+ .idiv1-form {
+   margin-right: 2%;
+ }
+ 
+ 
+ @media (max-width: 768px) {
+   .container {
+     flex-direction: column;
+   }
+ 
+   .idiv1-form,
+   .idiv2-form {
+     width: 100%;
+     margin-right: 0;
+     margin-left: 0;
+   }
+ }
+
+/* Apply styles to the read-only and uneditable fields */
+input[readonly] , textarea[readonly]{
+  font-weight:500;
+  font-size: large;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+/* Post info  */
+
+#info-form {
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+button[type="submit"] {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #27ae60;
+}
+
+.container {
+  justify-content: space-between;
+}
+
+
+.div1-form,
+.div2-form,
+.div3-form {
+  width: 98%;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  background-color: #f1f1f1;
+}
+
+.div1-form {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+}
+
+.div1-form h2{
+  padding-top: 10%;
+  width: 250px;
+  color: red;
+}
+
+.div2-form h2{
+  text-align: center;
+  color: red;
+}
+
+.div3-form h2{
+  text-align: center;
+  color: red;
+}
+
+.div11-form , .div12-form {
+  width: 48%;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  background-color: #f1f1f1;
+}
+
+.div1-form {
+  margin-right: 2%;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .div1-form,
+  .div2-form {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.company_info {
+  color: red;
+} 
+
+/* Additional styles for interactivity */
+input[type="text"]:focus,
+textarea:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.6);
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder,
+input[type="email"]::placeholder {
+  color: #888;
+}
+
+input[type="text"]:hover,
+textarea:hover,
+input[type="email"]:hover {
+  background-color: #f7f7f7;
+}
+
+
+
+/* company info  */
+
+
+/* CSS specific to company_info mixin */
+/* .company_info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.company_info h1 {
+  color: #ff5555;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.company_info ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.company_info h3 {
+  color: #ff5555;
+  margin: 0;
+}
+
+.company_info p {
+  margin: 0;
+}
+
+.company_info p:not(:last-child) {
+  margin-bottom: 10px;
+} */
+
+
+
+/* display a company  */
+
+/* .company-details-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 0;
+}
+
+.company-details-wrapper .company-image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.company-details-wrapper .company-image h2,
+.company-details-wrapper .company-image p,
+.company-details-wrapper .company-image a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.company-details-wrapper .company-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.company-details-wrapper .company-info .name {
+  color: yellow;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.company-details-wrapper .company-info .value {
+  color: orange;
+  font-size: 18px;
+}
+
+.company-details-wrapper .buttons-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.company-details-wrapper .buttons-container a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.company-details-wrapper .buttons-container a button {
+  width: 100%;
+}
+
+.company-image p {
+  font-weight: bold;
+}
+
+.name{
+  font-family: 'Times New Roman', Times, serif;
+  color: red;
+}
+.value p {
+  font-family: 'Times New Roman', Times, serif;
+  color: #080808;
+}
+
+
+ /* Info  */
+
+ .user-info-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.user-info-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-info-row label {
+  flex-basis: 150px;
+  color: #333;
+  font-weight: bold;
+}
+
+.user-info-value {
+  flex-grow: 1;
+  color: #555;
+}
+
+.user-info-value::before {
+  content: ": ";
+  font-weight: normal;
+}  
+
+
+/* All companies  */
+
+/* styles.css */
+/* 
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  /* text-align: left; */
+/* } */
+/* 
+.companys-details{
+  flex-basis: 20%;
+}
+
+.companys-details {
+  display: flex;
+  border: 1px solid #ccc; */
+  /* margin: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.companys-image {
+  flex: 1;
+  margin-right: 10px;
+}
+
+
+.companys-info {
+  flex: 2;
+}
+
+.companys { */
+  /* color: #333;
+}
+
+.companys h2 {
+  font-size: 1.5rem;
+}
+
+.companys p {
+  margin: 5px 0;
+} */
+
+/* a { */
+  /* display: inline-block;
+  padding: 5px 10px;
+  /* background-color: #3498db; */
+  /* color: rgb(247, 18, 18);
+  width: 20%; */
+  /* text-decoration: none; */
+/* }
+
+.companys-details{
+  border-radius: 3px; 
+  display: flex;
+} */  
